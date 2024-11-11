@@ -45,10 +45,11 @@ public class Juego {
                 System.out.print("Ingrese la dirección de movimiento (arriba, abajo, izquierda, derecha): ");
                 String direccion = scanner.next();
                 
-                mapa.moverSoldado(fila, columna, direccion, ejercito.getReino().getNombre());               
+                mapa.moverEjercito(fila, columna, direccion, ejercito.getReino().getNombre());               
                 mapa.mostrarMapa();
             }
         }
         scanner.close();
     }
 }
+
